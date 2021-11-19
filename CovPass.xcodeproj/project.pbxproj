@@ -2005,12 +2005,12 @@
 		};
 		65D6D53725F8B94E000CB339 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2101178C2646E86F00B9E8FF /* debug.xcconfig */;
+			baseConfigurationReference = 381A13F42647DB7B0037B7F0 /* release-rki.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development: Bernhard Krenz (QCKK68PY3F)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = DE83VF8XB3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Source/CovPassCheckApp/Supporting Files/Info.plist";
@@ -2032,12 +2032,12 @@
 		};
 		65D6D53825F8B94E000CB339 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3814420B2646ED7600207CFA /* release.xcconfig */;
+			baseConfigurationReference = 381A13F32647DB580037B7F0 /* release-rki.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dgtl.ai GmbH";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = C7JWLD34VM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Source/CovPassCheckApp/Supporting Files/Info.plist";
