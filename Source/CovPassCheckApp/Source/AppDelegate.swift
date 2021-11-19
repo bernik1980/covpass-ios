@@ -32,7 +32,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         self.sceneCoordinator = sceneCoordinator
 
-        appUpdateDialogIfNeeded()
+				// disabling update check, because of custom versioning
+				// appUpdateDialogIfNeeded()
 
         return true
     }
@@ -64,4 +65,42 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_: UIApplication) {
         BackgroundUtils.removeHideView(from: window)
     }
+	
+	func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
+	{
+		// check deep-link
+		if let queryItems = URLComponents(url:url, resolvingAgainstBaseURL:false)?.queryItems
+		{
+			for item in queryItems
+			{
+				if (item.name.lowercased() == "scan" && item.value == "1")
+				{
+					// pop to root if needed
+					if let viewController = self.sceneCoordinator?.rootViewController?.mostTopViewController
+					{
+						if (viewController !== self.sceneCoordinator?.rootViewController)
+						{
+							// dissmis
+							self.sceneCoordinator?.dismiss(viewController, false, completion: {
+								// and try again
+								_ = self.application(application, open:url, sourceApplication:sourceApplication, annotation:annotation)
+							})
+							
+							return true
+						}
+					}
+					
+					// show scanner
+					// need to use internal loigic
+					if let viewController = (self.sceneCoordinator?.rootViewController as? UINavigationController)?.viewControllers.first as? ValidatorOverviewViewController
+					{
+						viewController.viewModel.startQRCodeValidation()
+					}
+					break
+				}
+			}
+		}
+		
+		return true
+	}
 }

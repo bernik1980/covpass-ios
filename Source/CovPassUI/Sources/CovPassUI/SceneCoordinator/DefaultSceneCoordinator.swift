@@ -144,7 +144,7 @@ public class DefaultSceneCoordinator: NSObject, SceneCoordinator {
 
     // MARK: - Helper
 
-    private func dismiss(
+    public func dismiss(
         _ viewController: UIViewController,
         _ animated: Bool,
         completion: (() -> Void)? = nil

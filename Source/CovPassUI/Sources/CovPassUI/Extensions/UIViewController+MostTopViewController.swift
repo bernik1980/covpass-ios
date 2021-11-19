@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    var mostTopViewController: UIViewController? {
+    public var mostTopViewController: UIViewController? {
         var topViewController: UIViewController? = self
         while topViewController?.presentedViewController != nil {
             topViewController = topViewController?.presentedViewController

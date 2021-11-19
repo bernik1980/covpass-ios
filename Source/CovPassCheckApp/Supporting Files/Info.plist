@@ -50,6 +50,10 @@
 	<string>$(DCC_RULES_TLS_CERTIFICATE_NAME)</string>
 	<key>DCC_RULES_URL</key>
 	<string>$(DCC_RULES_URL)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>FastEntry</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
