@@ -180,6 +180,9 @@
 		38E94DE9266121D60015553C /* VaccinationRepositoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E94DE8266121D60015553C /* VaccinationRepositoryExtension.swift */; };
 		38E94DEC266123520015553C /* VaccinationRepositoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E94DEA266122E30015553C /* VaccinationRepositoryExtension.swift */; };
 		38FCEEC926EB9DD200D10A22 /* BoosterLogicFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCEEC826EB9DD200D10A22 /* BoosterLogicFactory.swift */; };
+		40274801274D17BE00DF3878 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 402747FE274D17BE00DF3878 /* iTunesArtwork@2x */; };
+		40274802274D17BE00DF3878 /* iTunesArtwork@3x in Resources */ = {isa = PBXBuildFile; fileRef = 402747FF274D17BE00DF3878 /* iTunesArtwork@3x */; };
+		40274803274D17BE00DF3878 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 40274800274D17BE00DF3878 /* iTunesArtwork */; };
 		6507D7ED25FB5E0300D69F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AB2A4325FA40CE00D4EA52 /* Assets.xcassets */; };
 		65E0DB0A2657F31C004C660F /* CertificateSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0DB052657F31C004C660F /* CertificateSceneFactory.swift */; };
 		65E0DB0B2657F31C004C660F /* CertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0DB062657F31C004C660F /* CertificateViewController.swift */; };
@@ -419,6 +422,9 @@
 		38E94DEA266122E30015553C /* VaccinationRepositoryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationRepositoryExtension.swift; sourceTree = "<group>"; };
 		38E94DF026613F350015553C /* SceneCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorMock.swift; sourceTree = "<group>"; };
 		38FCEEC826EB9DD200D10A22 /* BoosterLogicFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoosterLogicFactory.swift; sourceTree = "<group>"; };
+		402747FE274D17BE00DF3878 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		402747FF274D17BE00DF3878 /* iTunesArtwork@3x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@3x"; sourceTree = "<group>"; };
+		40274800274D17BE00DF3878 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		65D6D4DE25F8B8FB000CB339 /* CovPassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovPassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6D4EE25F8B8FB000CB339 /* CovPassAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovPassAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6D51425F8B94D000CB339 /* CovPassCheckApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovPassCheckApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -831,6 +837,9 @@
 				21FBCA32264F011800CAEF44 /* Locale */,
 				88AB2A4325FA40CE00D4EA52 /* Assets.xcassets */,
 				21FBCA78264F016E00CAEF44 /* LaunchScreen.storyboard */,
+				40274800274D17BE00DF3878 /* iTunesArtwork */,
+				402747FE274D17BE00DF3878 /* iTunesArtwork@2x */,
+				402747FF274D17BE00DF3878 /* iTunesArtwork@3x */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1543,13 +1552,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40274801274D17BE00DF3878 /* iTunesArtwork@2x in Resources */,
 				2181C179264F037400DE7412 /* WelcomeViewController.xib in Resources */,
 				3876382F26ADBFEC00FBCA47 /* privacy-covpasscheck-en.html in Resources */,
+				40274802274D17BE00DF3878 /* iTunesArtwork@3x in Resources */,
 				2181C190264F03AA00DE7412 /* ValidationResultViewController.xib in Resources */,
 				3823416A268A2A3900722A46 /* contact-covpasscheck-de.html in Resources */,
 				3876382E26ADBFE500FBCA47 /* contact-covpasscheck-en.html in Resources */,
 				88BEE04226550E2500479E5E /* privacy-covpasscheck-de.html in Resources */,
 				2181C1BD264F053000DE7412 /* Localizable.strings in Resources */,
+				40274803274D17BE00DF3878 /* iTunesArtwork in Resources */,
 				2181C168264F035A00DE7412 /* ValidatorOverviewViewController.xib in Resources */,
 				21FBCA79264F016E00CAEF44 /* LaunchScreen.storyboard in Resources */,
 				09D1785F270B408600A03451 /* TrustedListDetailsViewController.xib in Resources */,
