@@ -98,7 +98,9 @@ class ValidationResultViewController: UIViewController {
     }
 
     private func configureToolbarView() {
-			toolbarView.state = .confirm("validation_check_popup_valid_vaccination_button_fastentry".localized)
+			let textKey = self.viewModel is ErrorResultViewModel ? "validation_check_popup_invalid_vaccination_button_fastentry" : "validation_check_popup_valid_vaccination_button_fastentry"
+			
+			toolbarView.state = .confirm(textKey.localized)
         toolbarView.delegate = self
     }
 
@@ -128,7 +130,7 @@ extension ValidationResultViewController: CustomToolbarViewDelegate {
         switch buttonType {
         case .textButton:
 					// try open fastEntry
-					if let url = URL(string:"FastEntry://?result=1")
+					if let url = URL(string:"FastEntry://?result=" + (self.viewModel is ErrorResultViewModel ? "0" : "1"))
 					{
 						if (UIApplication.shared.canOpenURL(url))
 						{

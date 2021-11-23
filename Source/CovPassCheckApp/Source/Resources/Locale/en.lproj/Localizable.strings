@@ -182,6 +182,7 @@
 
 "validation_check_popup_valid_vaccination_button_title" = "Scan another certificate";
 "validation_check_popup_valid_vaccination_button_fastentry" = "Send result to FastEntry";
+"validation_check_popup_invalid_vaccination_button_fastentry" = "Back to FastEntry";
 
 "accessibility_validation_check_popup_valid_vaccination_label_close" = "Close";
 
