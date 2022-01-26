@@ -21,6 +21,9 @@ public enum TextStyle {
     /// size: 14 lineHeight: 17 letterSpacing: 0.13 type: semi-bold color: onBackground100
     case header_3
 
+    /// size: 16 lineHeight: 24 letterSpacing: 0.13 type: semi-bold color: onBackground100
+    case header_16
+
     /// size: 18 lineHeight: 27 letterSpacing: 0.13 type: semi-bold color: onBackground100
     case subheader_1
 
@@ -58,6 +61,11 @@ public enum TextStyle {
                 .font(named: UIFont.sansSemiBold, size: 14.0, lineHeight: 21.0, textStyle: .subheadline)
                 .colored(.onBackground100)
 
+        case .header_16:
+            return string
+                .font(named: UIFont.sansSemiBold, size: 16, lineHeight: 30, textStyle: .headline)
+                .colored(.onBackground100)
+
         case .subheader_1:
             return string
                 .font(named: UIFont.sansRegular, size: 18.0, lineHeight: 27.0, textStyle: .headline)
@@ -80,7 +88,7 @@ public enum TextStyle {
 
         case .mainButton:
             return string
-                .font(named: UIFont.sansSemiBold, size: 14.0, lineHeight: 21.0, textStyle: .headline)
+                .font(named: UIFont.sansSemiBold, size: 14.0, textStyle: .headline)
         }
     }
 }

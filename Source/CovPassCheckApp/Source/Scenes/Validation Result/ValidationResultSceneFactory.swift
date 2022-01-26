@@ -35,7 +35,8 @@ struct ValidationResultSceneFactory: SceneFactory {
             router: router,
             repository: VaccinationRepository.create(),
             certificate: certificate,
-            error: error
+            error: error,
+            certLogic: DCCCertLogic.create()
         )
         let viewController = ValidationResultViewController(viewModel: viewModel)
         return viewController

@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "4b0565384d3c4c588af09e660535b2c7c9bf5b39",
+          "version": "1.4.2"
+        }
+      },
+      {
         "package": "CertLogic",
         "repositoryURL": "https://github.com/eu-digital-green-certificates/dgc-certlogic-ios",
         "state": {
@@ -29,12 +38,12 @@
         }
       },
       {
-        "package": "FBSnapshotTestCase",
+        "package": "iOSSnapshotTestCase",
         "repositoryURL": "https://github.com/uber/ios-snapshot-test-case",
         "state": {
-          "branch": "main",
-          "revision": "f3140d1d4d650dc5bd14ce6ced4cf386594998fa",
-          "version": null
+          "branch": null,
+          "revision": "7b10770333a961be6e5a41c9ce04b8c6d3990126",
+          "version": "8.0.0"
         }
       },
       {
@@ -44,6 +53,15 @@
           "branch": null,
           "revision": "e59a317e03491abe1f04c87b965a52abae243ddd",
           "version": "1.1.8"
+        }
+      },
+      {
+        "package": "JWTDecode",
+        "repositoryURL": "https://github.com/auth0/JWTDecode.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "3cd207fb9e943b6168a117baa3936c823204c2dc",
+          "version": "2.6.3"
         }
       },
       {

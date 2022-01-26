@@ -11,6 +11,11 @@ import CovPassUI
 import PromiseKit
 import UIKit
 
+enum ValidationResultError: Error {
+    case technical
+    case functional
+}
+
 private enum Constants {
     static let image = UIImage.resultError
 
@@ -39,7 +44,7 @@ private enum Constants {
             Paragraph(icon: .calendar,
                       title: "functional_validation_check_popup_unsuccessful_certificate_subheadline_protection".localized,
                       subtitle: "functional_validation_check_popup_unsuccessful_certificate_subheadline_protection_text".localized),
-            Paragraph(icon: .statusPartialDetail,
+            Paragraph(icon: .statusPartial,
                       title: "functional_validation_check_popup_unsuccessful_certificate_subheadline_uncompleted".localized,
                       subtitle: "functional_validation_check_popup_unsuccessful_certificate_subheadline_uncompleted_text".localized)
         ]
