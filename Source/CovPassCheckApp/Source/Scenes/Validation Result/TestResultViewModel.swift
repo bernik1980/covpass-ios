@@ -62,6 +62,15 @@ class TestResultViewModel: ValidationResultViewModel {
     var info: String? {
         nil
     }
+	
+	var fastEntryResult : String {
+		if let testCert = certificate?.hcert.dgc.t?.first
+		{
+			return testCert.isPCR ? "2" : "1"
+		}
+		
+		return "0"
+	}
 
     // MARK: - Lifecycle
 

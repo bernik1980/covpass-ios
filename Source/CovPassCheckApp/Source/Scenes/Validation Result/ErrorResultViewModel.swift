@@ -63,6 +63,10 @@ class ErrorResultViewModel: ValidationResultViewModel {
     private var validationResultError: ValidationResultError {
         error as? ValidationResultError ?? .technical        
     }
+	
+	var toolbarState: CustomToolbarState {
+		return .confirm("validation_check_popup_invalid_vaccination_button_fastentry".localized)
+	}
 
     var icon: UIImage? {
         Constants.image
@@ -83,6 +87,10 @@ class ErrorResultViewModel: ValidationResultViewModel {
     var info: String? {
         nil
     }
+	
+	var fastEntryResult : String {
+		return "0"
+	}
 
     // MARK: - Lifecycle
 

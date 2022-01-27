@@ -18,7 +18,7 @@ private enum Constants {
 extension ValidationViewModel {
     
     var toolbarState: CustomToolbarState {
-        return .confirm(Constants.confirmButtonLabel)
+			return .confirm("validation_check_popup_valid_vaccination_button_fastentry".localized)
     }
     
     func cancel() {

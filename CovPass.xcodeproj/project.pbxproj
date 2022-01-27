@@ -2378,7 +2378,7 @@
 		};
 		65D6D53725F8B94E000CB339 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2101178C2646E86F00B9E8FF /* debug.xcconfig */;
+			baseConfigurationReference = 381A13F42647DB7B0037B7F0 /* release-rki.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development: Bernhard Krenz (QCKK68PY3F)";
@@ -2405,7 +2405,7 @@
 		};
 		65D6D53825F8B94E000CB339 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3814420B2646ED7600207CFA /* release.xcconfig */;
+			baseConfigurationReference = 381A13F42647DB7B0037B7F0 /* release-rki.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Distribution: dgtl.ai GmbH (2TK9K6TNYJ)";

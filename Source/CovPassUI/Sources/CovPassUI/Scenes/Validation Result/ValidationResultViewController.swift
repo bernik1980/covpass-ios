@@ -41,6 +41,7 @@ public protocol ValidationViewModel {
     var resultBody: String { get }
     var paragraphs: [Paragraph] { get }
     var info: String? { get }
+    var fastEntryResult : String { get }
     func scanNextCertifcate()
 }
 
@@ -162,7 +163,17 @@ extension ValidationResultViewController: CustomToolbarViewDelegate {
     public func customToolbarView(_: CustomToolbarView, didTap buttonType: ButtonItemType) {
         switch buttonType {
         case .textButton:
-            viewModel.scanNextCertifcate()
+					// try open fastEntry
+					if let url = URL(string:"FastEntry://?result=" + viewModel.fastEntryResult)
+					{
+						if (UIApplication.shared.canOpenURL(url))
+						{
+							UIApplication.shared.open(url, options:[:], completionHandler:nil)
+						}
+					}
+					
+					// close
+					viewModel.cancel()
         default:
             return
         }

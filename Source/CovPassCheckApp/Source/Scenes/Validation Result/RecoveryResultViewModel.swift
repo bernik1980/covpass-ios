@@ -47,6 +47,15 @@ class RecoveryResultViewModel: ValidationResultViewModel {
     var info: String? {
         "validation_check_popup_valid_vaccination_recovery_note".localized
     }
+	
+	var fastEntryResult : String {
+		if (certificate?.hcert.dgc != nil)
+		{
+				return "3"
+		}
+		
+		return "0"
+	}
 
     // MARK: - Lifecycle
 
